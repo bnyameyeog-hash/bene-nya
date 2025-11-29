@@ -8,24 +8,67 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1, h2 { color: #2c3e50; }
-    img.profile {
-      width: 140px;
-      height: 140px;
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #34495e;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .profile {
+      display: block;
+      margin: 0 auto;
+      width: 100px;   /* very small passport size */
+      height: 120px;
       object-fit: cover;
-      border-radius: 50%
+      border-radius: 8px;
+      border: 2px solid #2c3e50;
+      margin-top: 20px;
+    }
+    .contact {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .highlight {
+      background: #fff;
+      padding: 15px;
+      border-left: 4px solid #2980b9;
+      margin-top: 20px;
+      border-radius: 6px;
     }
   </style>
 </head>
 <body>
 
   <h1>Benedicta Nyameye Opoku Gyasi</h1>
-  <p><strong>Master of Science Student in Mathematics</strong><br>
-     Northern Arizona University, Graduate Teaching Assistant</p>
+  <p style="text-align:center;">
+    <strong>Master of Science Student in Mathematics</strong><br>
+    Northern Arizona University, Graduate Teaching Assistant
+  </p>
 
   <!-- Picture -->
-  <img src="pic.jpeg" alt="Profile Picture">
+  <img src="pic.jpeg" alt="Profile Picture" class="profile">
 
   <!-- Academic Background -->
   <h2>About Me</h2>
@@ -33,9 +76,9 @@
     I am pursuing my M.S. in Mathematics at Northern Arizona University, where I serve as a Graduate Teaching Assistant.  
     I completed my B.Sc. in Mathematics at Kwame Nkrumah University of Science and Technology (KNUST), Ghana, where I also worked as a Teaching Assistant for Real Functions.
     I am highly interested in applying machine learning, specifically deep learning techniques and neural networks to
-solve mathematical problems. Skilled in programming, data analysis, and mathematical modeling, focusing on
-using algorithms to address real-world challenges. Eager to contribute to the advancement of mathematical
-sciences through research and collaborations.
+    solve mathematical problems. Skilled in programming, data analysis, and mathematical modeling, focusing on
+    using algorithms to address real-world challenges. Eager to contribute to the advancement of mathematical
+    sciences through research and collaborations.
   </p>
 
   <!-- Contact -->
@@ -44,24 +87,26 @@ sciences through research and collaborations.
     <p>Email: <a href="mailto:bo447@nau.edu">bo447@nau.edu</a>, 
        <a href="mailto:bnyameyeog@gmail.com">bnyameyeog@gmail.com</a></p>
     <div class="links">
-      <a href="https://www.linkedin.com/in/benedicta-nyameye-opoku-gyasi"  rel="noopener>LinkedIn</a>.
+      <a href="https://www.linkedin.com/in/benedicta-nyameye-opoku-gyasi" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/BenedictaNyameyeOpokuGyasi" rel="noopener">Facebook</a>
     </div>
   </div>
 
   <!-- Math Section -->
-  <h2>Mathematics Highlight</h2>
-  <p> <strong>First Isomorphism Theorem</strong> </p>
-  <p>
-    
+  <div class="highlight">
+    <h2>Mathematics Highlight</h2>
+    <p><strong>First Isomorphism Theorem</strong></p>
+    <p>
+      
 
 \[
-      \text{If } \varphi: G \to H \text{ is a group homomorphism, then } 
-      G / \ker(\varphi) \cong \text{Im}(\varphi).
-    \]
+        \text{If } \varphi: G \to H \text{ is a group homomorphism, then } 
+        G / \ker(\varphi) \cong \text{Im}(\varphi).
+      \]
 
 
-  </p>
+    </p>
+  </div>
 
 </body>
 </html>
-
